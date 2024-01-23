@@ -79,7 +79,8 @@ h1::before {
   gap: 30px;
 }
 
-.question:hover {
+.question:hover,
+.question:focus {
   color: #ad28eb;
   cursor: pointer;
 }
@@ -102,13 +103,14 @@ hr {
   margin-bottom: 20px;
 }
 
-.content-container.active .answer {
-  height: 100%;
-}
-
 .content-container.active .question::after {
   content: url(assets/images/icon-minus.svg);
   transition: 0.5s;
+}
+
+.content-container.active .answer {
+  height: 100%;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 400px) {
