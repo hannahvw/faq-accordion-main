@@ -69,16 +69,18 @@ h1::before {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 40px;
   margin-bottom: 20px;
 }
 
 .question::after {
-  content: url(assets/images/icon-minus.svg);
+  content: url(assets/images/icon-plus.svg);
 }
 
 .answer {
   color: var(--color-400);
   line-height: 1.4;
+  display: none;
 }
 
 hr {
