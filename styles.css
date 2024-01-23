@@ -42,10 +42,11 @@ header {
   right: 0;
   height: 225px;
   background-image: url(assets/images/background-pattern-mobile.svg);
+  background-repeat: no-repeat;
 }
 
 .accordion-card {
-  max-width: 350px;
+  max-width: 325px;
   background-color: var(--color-white);
   border-radius: 10px;
   margin-bottom: 20px;
@@ -69,7 +70,11 @@ h1::before {
   align-items: center;
   justify-content: space-between;
   gap: 40px;
-  margin-bottom: 20px;
+}
+
+.question:hover {
+  color: #ad28eb;
+  cursor: pointer;
 }
 
 .question::after {
@@ -82,6 +87,7 @@ h1::before {
   height: 0px;
   overflow: hidden;
   transition: 0.5s;
+  padding-top: 20px;
 }
 
 hr {
