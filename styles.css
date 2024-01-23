@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+html {
+  font-family: "Work Sans", sans-serif;
+}
+
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-200: hsl(275, 100%, 97%);
+  --color-400: hsl(292, 16%, 49%);
+  --color-600: hsl(292, 42%, 14%);
+}
+
+body {
+    background-color: var(--color-200);
+}
