@@ -79,8 +79,7 @@ h1::before {
   gap: 30px;
 }
 
-.question:hover,
-.question:focus {
+.question:hover {
   color: #ad28eb;
   cursor: pointer;
 }
