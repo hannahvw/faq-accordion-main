@@ -42,7 +42,6 @@ header {
   right: 0;
   height: 225px;
   background-image: url(assets/images/background-pattern-mobile.svg);
-  background-repeat: no-repeat;
 }
 
 .accordion-card {
@@ -57,10 +56,18 @@ h1 {
   display: flex;
   gap: 20px;
   color: var(--color-600);
+  padding-bottom: 25px;
 }
 
 h1::before {
   content: url(assets/images/icon-star.svg);
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
 }
 
 .question {
@@ -69,7 +76,7 @@ h1::before {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
+  gap: 30px;
 }
 
 .question:hover {
@@ -87,12 +94,12 @@ h1::before {
   height: 0px;
   overflow: hidden;
   transition: 0.5s;
-  padding-top: 20px;
+  margin-bottom: 5px;
 }
 
 hr {
   border: 0.5px solid var(--color-200);
-  margin: 20px 0;
+  margin-bottom: 20px;
 }
 
 .content-container.active .answer {
@@ -102,4 +109,13 @@ hr {
 .content-container.active .question::after {
   content: url(assets/images/icon-minus.svg);
   transition: 0.5s;
+}
+
+@media screen and (min-width: 400px) {
+  header {
+    background-image: url(assets/images/background-pattern-desktop.svg);
+  }
+  .accordion-card {
+    max-width: 550px;
+  }
 }
