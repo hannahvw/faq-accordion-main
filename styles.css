@@ -26,6 +26,62 @@ html {
 }
 
 body {
-    background-color: var(--color-200);
+  background-color: var(--color-200);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+header {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 225px;
+  background-image: url(assets/images/background-pattern-mobile.svg);
+}
+
+.accordion-card {
+  max-width: 350px;
+  background-color: var(--color-white);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 30px;
+}
+
+h1 {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 10px;
+  color: var(--color-600);
+}
+
+h1::before {
+  content: url(assets/images/icon-star.svg);
+}
+
+.question {
+  font-weight: 600;
+  color: var(--color-600);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.question::after {
+  content: url(assets/images/icon-minus.svg);
+}
+
+.answer {
+  color: var(--color-400);
+  line-height: 1.4;
+}
+
+hr {
+  border: 0.5px solid var(--color-200);
+  margin: 20px 0;
+}
